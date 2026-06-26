@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>视频号团购计划</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR EFFECTS -->
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- TOP BAR -->
+<div class="topbar"><div class="title">视频号团购计划</div></div>
+
+<!-- SIDE NAV DOTS -->
+<div class="side-nav" id="sideNav"></div>
+
+<!-- SLIDE NUMBER -->
+<div class="slide-num" id="slideNum"></div>
+
+<!-- CONTACT BUTTON -->
+<button class="contact-btn" onclick="showModal()">📞 联系我们</button>
+
+<!-- DRAG HINT -->
+<div class="drag-hint">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  左右滑动浏览
+</div>
+
+<!-- SLIDES WRAPPER -->
+<div class="slides-wrapper" id="slidesWrapper">
+<div class="slides-track" id="slidesTrack">
+
+<!-- SLIDE 0: HERO -->
+<div class="slide">
+  <div class="slide-bg"></div>
+  <div class="particles" id="particles0"></div>
+  <div class="slide-inner hero">
+    <div class="hero-badge">🚀 本地生活新机遇</div>
+    <h1>让您的门店<br>被更多人看到</h1>
+    <p class="subtitle">微信视频号 + 本地生活团购，帮您的门店低成本获客、高转化成交。我们提供全套内容运营服务，让您零门槛拥抱视频号红利。</p>
+    <div class="meta">
+      <span>佣金低至 1%</span><span>·</span>
+      <span>免费代拍短视频</span><span>·</span>
+      <span>私域客户沉淀</span>
+    </div>
+  </div>
+  <div class="scroll-hint">↓</div>
+</div>
+
+<!-- SLIDE 1: 市场机会 -->
+<div class="slide">
+  <div class="slide-bg"></div>
+  <div class="particles" id="particles1"></div>
+  <div class="slide-inner">
+    <div class="section-tag">Part 01 · 市场机会</div>
+    <h2>视频号团购：您的门店正在错失的流量红利</h2>
+    <p>2024年中国本地生活行业 GMV 突破 <strong>4 万亿元</strong>，线上化率超 80%。行业从"跑马圈地"进入"精细化运营"阶段。</p>
+    <div class="stats">
+      <div class="stat"><div class="num">4万亿+</div><div class="label">2024年本地生活GMV</div></div>
+      <div class="stat"><div class="num">80%+</div><div class="label">线上化率</div></div>
+      <div class="stat"><div class="num">1000亿</div><div class="label">2024年视频号团购GMV</div></div>
+      <div class="stat"><div class="num">300%+</div><div class="label">2025 Q1同比增长</div></div>
+    </div>
+    <div class="highlight"><strong>🔥 红利窗口约12-18个月</strong>，现在入场就像2018年做抖音。</div>
+  </div>
+</div>
+
+<!-- SLIDE 2: 佣金对比 -->
+<div class="slide">
+  <div class="slide-bg"></div>
+  <div class="particles" id="particles2"></div>
+  <div class="slide-inner">
+    <div class="section-tag">Part 02 · 更低佣金</div>
+    <h2>帮您省下每一分利润</h2>
+    <p>同样的团购套餐，在不同平台成交，您到手的利润截然不同：</p>
+    <table>
+      <thead><tr><th>平台</th><th>佣金比例</th><th>月GMV 10万的到手收入</th></tr></thead>
+      <tbody>
+        <tr><td>美团</td><td>5-8%</td><td>约 9.2-9.5 万</td></tr>
+        <tr><td>抖音</td><td>5-8%</td><td>约 9.2-9.5 万</td></tr>
+        <tr><td style="color:#818cf8;font-weight:700;">我们</td><td style="color:#818cf8;font-weight:700;">1%</td><td style="color:#818cf8;font-weight:700;">约 9.9 万</td></tr>
+      </tbody>
+    </table>
+    <div class="highlight"><strong>💡 佣金只有抖音的1/3、美团的1/5</strong>，省下的每一分钱都是您的纯利润。</div>
+  </div>
+</div>
+
+<!-- SLIDE 3: 内容赋能 -->
+<div class="slide">
+  <div class="slide-bg"></div>
+  <div class="particles" id="particles3"></div>
+  <div class="slide-inner">
+    <div class="section-tag">Part 03 · 内容赋能</div>
+    <h2>您只管做好生意，内容交给我们</h2>
+    <p>别人只帮您上架团购，我们还帮您做内容引流。专业团队为您的门店拍摄短视频，挂到视频号上。</p>
+    <div class="cards">
+      <div class="card magnetic-card"><div class="icon">🎬</div><h4>专业短视频拍摄</h4><p>专业团队到您的门店实地拍摄，制作 15-30 秒高质量短视频</p></div>
+      <div class="card magnetic-card"><div class="icon">📱</div><h4>视频号发布运营</h4><p>视频发布到视频号，利用微信算法推荐，精准触达附近潜在客户</p></div>
+      <div class="card magnetic-card"><div class="icon">🔄</div><h4>持续内容更新</h4><p>定期为您拍摄新内容，保持门店在视频号上的活跃度和曝光</p></div>
+      <div class="card magnetic-card"><div class="icon">📊</div><h4>数据效果追踪</h4><p>实时查看视频播放量、团购销量、核销率等核心数据</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 4: 私域沉淀 -->
+<div class="slide">
+  <div class="slide-bg"></div>
+  <div class="particles" id="particles4"></div>
+  <div class="slide-inner">
+    <div class="section-tag">Part 04 · 私域沉淀</div>
+    <h2>客户是您的，不是平台的</h2>
+    <p>在美团/抖音买了券，商家拿不到用户信息。但在我们这里，用户购买后自动成为商家的<strong>微信会员</strong>。</p>
+    <div class="cards">
+      <div class="card magnetic-card"><div class="icon">👥</div><h4>自动成为微信会员</h4><p>用户购买后自动沉淀为您的微信会员，可长期触达</p></div>
+      <div class="card magnetic-card"><div class="icon">💬</div><h4>社群精准营销</h4><p>通过微信群、朋友圈持续触达老客户，促进复购</p></div>
+      <div class="card magnetic-card"><div class="icon">🔁</div><h4>裂变拉新</h4><p>好友拼团、邀请有礼，让客户帮您带来新客户</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 5: 用户怎么来 -->
+<div class="slide">
+  <div class="slide-bg"></div>
+  <div class="particles" id="particles5"></div>
+  <div class="slide-inner">
+    <div class="section-tag">Part 05 · 客源保障</div>
+    <h2>我们帮您把客户带到店里来</h2>
+    <p>多元化的获客方式，确保您的团购有人买、有人来。</p>
+    <div class="timeline">
+      <div class="timeline-item"><div class="tl-title">① 视频号内容推荐</div><div class="tl-desc">您的专属短视频发布到视频号，微信算法推荐给附近感兴趣的用户</div></div>
+      <div class="timeline-item"><div class="tl-title">② 达人带货推广</div><div class="tl-desc">合作本地生活类视频号达人，帮您的团购商品带货分佣</div></div>
+      <div class="timeline-item"><div class="tl-title">③ 微信社交裂变</div><div class="tl-desc">用户购买后自动弹出"分享给好友，双方各得红包"，裂变传播</div></div>
+      <div class="timeline-item"><div class="tl-title">④ 本地生活社群</div><div class="tl-desc">加入本地生活推荐群，每天收到精选团购推荐和限时秒杀</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 6: 操作流程 -->
+<div class="slide">
+  <div class="slide-bg"></div>
+  <div class="particles" id="particles6"></div>
+  <div class="slide-inner">
+    <div class="section-tag">Part 06 · 合作流程</div>
+    <h2>简单四步，开启视频号团购</h2>
+    <div class="stats" style="grid-template-columns:repeat(4,1fr);">
+      <div class="stat"><div class="num" style="font-size:1.4rem;">①</div><div class="label" style="margin-top:.6rem;">签约入驻<br>免费审核</div></div>
+      <div class="stat"><div class="num" style="font-size:1.4rem;">②</div><div class="label" style="margin-top:.6rem;">上架团购<br>我们代操作</div></div>
+      <div class="stat"><div class="num" style="font-size:1.4rem;">③</div><div class="label" style="margin-top:.6rem;">视频拍摄<br>专业团队</div></div>
+      <div class="stat"><div class="num" style="font-size:1.4rem;">④</div><div class="label" style="margin-top:.6rem;">开始出单<br>持续运营</div></div>
+    </div>
+    <div class="highlight"><strong>🎁 前10家合作商家免一切费用</strong>——视频服务免费、佣金免收，名额有限，先到先得。</div>
+  </div>
+</div>
+
+<!-- SLIDE 7: 效果预期 -->
+<div class="slide">
+  <div class="slide-bg"></div>
+  <div class="particles" id="particles7"></div>
+  <div class="slide-inner">
+    <div class="section-tag">Part 07 · 效果预期</div>
+    <h2>看看其他商家上线后的变化</h2>
+    <p>我们的种子商家上线后普遍获得了以下效果：</p>
+    <div class="cards">
+      <div class="card magnetic-card"><div class="icon">📈</div><h4>曝光量提升</h4><p>一条优质视频可获得数千次曝光，精准触达附近潜在客户</p></div>
+      <div class="card magnetic-card"><div class="icon">💰</div><h4>团购销量增长</h4><p>上线首月多家商家团购销量增长 200% 以上</p></div>
+      <div class="card magnetic-card"><div class="icon">⭐</div><h4>新客到店增加</h4><p>通过视频号推荐和社交裂变，带来更多从未到过的顾客</p></div>
+      <div class="card magnetic-card"><div class="icon">🔒</div><h4>老客户复购</h4><p>微信会员沉淀，通过社群和朋友圈持续触达，促进复购</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 8: 为什么选择我们 -->
+<div class="slide">
+  <div class="slide-bg"></div>
+  <div class="particles" id="particles8"></div>
+  <div class="slide-inner">
+    <div class="section-tag">Part 08 · 我们的优势</div>
+    <h2>为什么选择与我们合作？</h2>
+    <div class="cards">
+      <div class="card magnetic-card"><div class="icon">🏠</div><h4>本地团队，服务到位</h4><p>团队就在您所在城市，随时上门拍摄、沟通，响应速度快</p></div>
+      <div class="card magnetic-card"><div class="icon">🛠️</div><h4>一站式服务</h4><p>从入驻、上架、拍摄到运营，全程有人负责，您省心省力</p></div>
+      <div class="card magnetic-card"><div class="icon">🤝</div><h4>长期合作伙伴</h4><p>我们不是做一锤子买卖，希望与您建立长期合作关系</p></div>
+      <div class="card magnetic-card"><div class="icon">💡</div><h4>懂技术也懂内容</h4><p>既能自己开发小程序，又能拍视频做内容，还能跑商务谈合作</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 9: CTA -->
+<div class="slide">
+  <div class="slide-bg"></div>
+  <div class="particles" id="particles9"></div>
+  <div class="slide-inner" style="text-align:center;">
+    <div class="section-tag" style="display:block;text-align:center;">Part 09 · 立即行动</div>
+    <h2 style="text-align:center;">抓住视频号团购的黄金窗口期</h2>
+    <p style="text-align:center;max-width:600px;margin:0 auto 2rem;">红利窗口大约还有 12-18 个月。现在入场，就像2018年做抖音。</p>
+    <div class="highlight" style="text-align:center;max-width:500px;margin:0 auto 2rem;">
+      <strong>🎁 前10家合作商家</strong><br>视频服务免费 · 佣金全免<br>名额有限，先到先得
+    </div>
+    <button class="contact-btn" style="position:relative;bottom:auto;left:auto;padding:.8rem 2rem;font-size:1rem;" onclick="showModal()">📞 立即联系我们</button>
+  </div>
+</div>
+
+</div><!-- /slides-track -->
+</div><!-- /slides-wrapper -->
+
+<!-- CONTACT MODAL -->
+<div class="modal-overlay" id="contactModal">
+  <div class="modal">
+    <button class="close-btn" onclick="hideModal()">✕</button>
+    <h3>联系我们</h3>
+    <p class="modal-sub">扫码加微信，或拨打电话咨询</p>
+    <div class="qr-box"><img src="微信图片_20260626182332_55_1.jpg" alt="微信二维码"></div>
+    <div class="contact-info">
+      📞 电话：<strong>131-6550-7362</strong><br>
+      📧 邮箱：<a href="mailto:3054267872@qq.com">3054267872@qq.com</a><br>
+      💬 微信：扫码添加
+    </div>
+  </div>
+</div>
+
+
+
+<script src="script.js" defer></script>
+</body>
+</html>
